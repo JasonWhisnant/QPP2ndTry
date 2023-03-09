@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>{{ person.employee.user.first_name }} {{ person.employee.user.last_name }}</h1>
+
+  <p><strong>Current Position: </strong>{{ person.get_current_position_display }}</p>
+  <p><strong>Current Path: </strong>{{ person.get_current_path_display }}</p>
+  <p><strong>Current Job: </strong>{{ person.get_current_job_display }}</p>
+  <p><strong>Current Level: </strong>{{ person.get_current_level_display }}</p>
+
+  <div style="margin-left:20px;margin-top:20px">
+    <h4>Reviews</h4>
+    {% for review in person.review_set.all %}
+      <hr>
+    <p class="{% if review.ready_for_review == True %}text-warning{% else %}text-success{% endif %}">
+      <strong><a href="{% url 'review-detail' review.pk %}"> {{ review.review_date }} </a></strong>
+    </p>
+    {% if review.ready_for_review == True %}
+      <p><strong>This review is waiting for manager review</strong></p>
+    {% endif %}
+    <p><strong>Approver: </strong>{{ review.approver }}</p>
+    {% endfor %}
+    <hr>
+    <br><br>
+
+    <h3>New Review</h3>
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+    <form action="{% url 'review-create' person.id %}" method="post">
+      {% csrf_token %}
+     <table>
+       {{ form.as_table }}
+       {{ form.errors }}
+     </table>
+     <input type="submit" value="Create Review">
+    </form>
+  </div>
+{% endblock %}
