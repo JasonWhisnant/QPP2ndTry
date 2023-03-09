@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>My Created Reviews</h1>
+
+    {% if review_list %}
+    <ul>
+        {% for review in review_list %}
+        <li>
+            <a href="{{ review.get_absolute_url }}">{{ review.person }} ({{ review.review_date }})</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>You have not created any reviews yet.</p>
+
+    {% endif %}
+{% endblock %}

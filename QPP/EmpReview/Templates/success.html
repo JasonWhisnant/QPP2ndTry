@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% if success %}
+    <h2>You have successfully added the following users:</h2>
+        {% for user in success %}
+        <ul>
+            <li>{{user.username}}, {{ user.first_name }}, {{ user.last_name }}</li>
+        </ul>
+        {% endfor %}
+    <h2>The following users need attention:</h2>
+        {% for error in errors %}
+        <ul>
+            <li>{{ error }}</li>
+        </ul>
+        {% endfor %}
+    {% elif added %}
+    <h2>The following users had profiles created or updated with this information:</h2>
+        {% for user in added %}
+        <ul>
+            <li>{{ user }}</li>
+        </ul>
+        {% endfor %}
+    {% endif %}
+    {% if noID or not_in_okta %}
+    <h2>The following users had errors in their profile:</h2>
+        <p><strong>No Manager ID in Okta:</strong></p>
+        {% for user in noID %}
+        <ul>
+            <li>{{user.username}}</li>
+        </ul>
+        {% endfor %}
+        <p><strong>Not in Okta: </strong></p>
+        {% for user in not_in_okta %}
+        <ul>
+            <li>{{user.username}}</li>
+        </ul>
+        {% endfor %}
+
+    {% else %}
+
+        <h1>You have successfully submitted this {{ stype }}. Keep an eye out for further feedback in your email.</h1>
+
+    {% endif %}
+
+{% endblock %}
