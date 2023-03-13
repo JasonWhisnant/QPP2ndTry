@@ -10,9 +10,9 @@ from django.dispatch import receiver
 
 class Employee(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    userId = models.CharField(max_length=25, blank=True)
-    managerId = models.CharField(max_length=25, blank=True)
-    status = models.CharField(max_length=25)
+    userId = models.CharField(max_length=50, blank=True)
+    managerId = models.CharField(max_length=50, blank=True)
+    status = models.CharField(max_length=50)
 
     def name(self):
         return f'{self.user.first_name} {self.user.last_name}'
