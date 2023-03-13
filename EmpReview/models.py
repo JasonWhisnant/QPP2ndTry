@@ -201,6 +201,7 @@ class Approval(models.Model):
         return f'{self.person.employee.name}, {self.review.review_date}'
 
 
+"""
 @receiver(post_save, sender=User)
 def create_employee_profile(sender, instance, created, **kwargs):
     if created:
@@ -210,3 +211,4 @@ def create_employee_profile(sender, instance, created, **kwargs):
 @receiver(post_save, sender=User)
 def save_employee_profile(sender, instance, **kwargs):
     instance.employee.save()
+"""
