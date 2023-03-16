@@ -15,6 +15,6 @@ from django.core.wsgi import get_wsgi_application
 # If so, then load the settings from production.py
 
 # settings_module = 'QPP.production' if 'WEBSITE_HOSTNAME' in os.environ else 'QPP.settings'
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', settings_module)
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'QPP.settings')
 
 application = get_wsgi_application()
