@@ -7,7 +7,7 @@ name: Build and deploy Python app to Azure Web App - eso-qppapp
 on:
   push:
     branches:
-      - test
+      - testing-0320
   workflow_dispatch:
 
 jobs:
@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'eso-qppapp'
           slot-name: 'testing'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_332CAD615E0E4D45905415A7202BDCD2 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_51A83C1800894B4D82F833EF3FBDF050 }}
