@@ -138,7 +138,7 @@ class Person(models.Model):
 class Review(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, help_text="Unique ID for this particular review")
     person = models.ForeignKey('Person', on_delete=models.SET_NULL, null=True)
-    review_date = models.DateField(default=timezone.now(), help_text="Date of review")
+    review_date = models.DateField(default=timezone.now, help_text="Date of review")
     reviewer = models.ForeignKey(Employee, on_delete=models.DO_NOTHING, null=True, related_name='reviewer',
                                  help_text="Manager writing the review")
     approver = models.ForeignKey(Employee, max_length=50,
@@ -175,7 +175,7 @@ class Approval(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, help_text="Unique ID for this approval")
     review = models.OneToOneField('Review', on_delete=models.DO_NOTHING, null=True)
     person = models.ForeignKey('Person', on_delete=models.DO_NOTHING, null=True)
-    approval_date = models.DateField(default=timezone.now(), help_text="Date of Approval")
+    approval_date = models.DateField(default=timezone.now, help_text="Date of Approval")
     business_case = models.BooleanField(blank=True, help_text="Meets business requirements?")
     base_salary = models.DecimalField(max_digits=7, decimal_places=2, help_text="New Salary")
 
