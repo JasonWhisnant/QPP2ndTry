@@ -1,7 +1,0 @@
-{
-    "clientId": settings.OKTA_AUTH["CLIENT_ID"],
-    "url": settings.OKTA_AUTH["ORG_URL"],
-    "redirectUri": settings.OKTA_AUTH["REDIRECT_URI"],
-    "scope": settings.OKTA_AUTH["SCOPES"],
-    "issuer": settings.OKTA_AUTH["ISSUER"],
-}
