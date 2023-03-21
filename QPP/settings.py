@@ -60,7 +60,7 @@ ROOT_URLCONF = 'QPP.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR.joinpath('templates')],
+        'DIRS': [BASE_DIR.joinpath('EmpReview/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

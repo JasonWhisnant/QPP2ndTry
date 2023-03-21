@@ -18,5 +18,19 @@
       <jdbc-url>jdbc:postgresql://server881421496.postgres.database.azure.com:5432/apptesting?user=guiltypeacock0&amp;password=o8Y37tDQpOIwMZBl1KBJNw&amp;sslmode=require</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="db.sqlite3" uuid="1c40db4f-512e-429c-a95d-294d0644b826">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db.sqlite3</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="testing@helpdesk-database.postgres.database.azure.com" uuid="f048cee2-33db-4c90-bedd-a44d58bda551">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://helpdesk-database.postgres.database.azure.com:5432/testing?sslmode=require</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
