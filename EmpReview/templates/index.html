@@ -10,7 +10,7 @@
     <li><strong>Current Reviews requiring attention: </strong><a href="{% url 'my_created_reviews' %}">{{ review_update_needed }}</a></li>
   </ul>
   <br><br>
-  <form action="{% url 'people-choice' %}" method="get">
+  <form action="{% url 'people_choice' %}" method="get">
     <button type="submit">Start a new review</button>
   </form>
 {% endblock %}
