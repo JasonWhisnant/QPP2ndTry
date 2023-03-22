@@ -151,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679501307672</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Refactored folder EmpReview/templates/EmpReview to EmpReview/templates/empreview to try to get rid of persistent html errors">
+      <created>1679501927426</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679501927426</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

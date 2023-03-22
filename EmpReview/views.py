@@ -67,6 +67,8 @@ class PersonView(LoginRequiredMixin, generic.ListView):
     paginate_by = 10
     context_object_name = 'people_list'
     redirect_field_name = 'people'
+    template_name = 'empreview/person_list.html'
+
 
 
 # class PersonDetailView(LoginRequiredMixin, generic.DetailView):
@@ -94,15 +96,18 @@ class PersonUpdateView(LoginRequiredMixin, generic.UpdateView):
             'current_level',
             'new_level',
         )
+    template_name = 'empreview/person_form.html'
 
 
 class ReviewDetailView(LoginRequiredMixin, generic.DetailView):
     model = Review
+    template_name = 'empreview/review_detail.html'
 
 
 
 class ApprovalDetailView(LoginRequiredMixin, generic.DetailView):
     model = Approval
+    template_name = 'empreview/approval_detail.html'
 
 
 class ReviewsByRequester(LoginRequiredMixin, generic.ListView):
@@ -246,6 +251,7 @@ def add_review(request, pk=None):
 class ReviewUpdate(UpdateView):
     model = Review
     fields = '__all__'
+    template_name = 'empreview/review_form.html'
 @login_required
 class ReviewDelete(DeleteView):
     pass
@@ -300,10 +306,10 @@ def success(request, stype):
 #################
 # Okta DB files #
 #################
-
+"""
 from .get_all_okta_users import get_all_users as oktausers
 
-"""
+
 def add_users_to_db(request):
     all_users = {}
     # currentEmps = set(Person.objects.values_list('first_name', 'last_name', flat=False))
