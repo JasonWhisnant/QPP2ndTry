@@ -51,7 +51,7 @@ def search_person(request):
         name = request.GET['name'].capitalize()
 
         all_users = Employee.objects.all().filter(user__first_name=name) | Employee.objects.all().filter(user__last_name=name)
-    return render(request, 'empreview/people_choice.html', {"all_users": all_users})
+    return render(request, 'EmpReview/people_choice.html', {"all_users": all_users})
 
 def get_or_create(request, id):
 
@@ -67,7 +67,7 @@ class PersonView(LoginRequiredMixin, generic.ListView):
     paginate_by = 10
     context_object_name = 'people_list'
     redirect_field_name = 'people'
-    template_name = 'empreview/person_list.html'
+    template_name = 'EmpReview/person_list.html'
 
 
 
@@ -80,7 +80,7 @@ def PersonDetail(request, pk):
     except Person.DoesNotExist:
         raise Http404("Person does not exist. Person Detail View")
     form = ReviewForm()
-    return render(request, 'empreview/person_detail.html', context={'person':person, 'form':form})
+    return render(request, 'EmpReview/person_detail.html', context={'person':person, 'form':form})
 
 
 class PersonUpdateView(LoginRequiredMixin, generic.UpdateView):
@@ -96,23 +96,23 @@ class PersonUpdateView(LoginRequiredMixin, generic.UpdateView):
             'current_level',
             'new_level',
         )
-    template_name = 'empreview/person_form.html'
+    template_name = 'EmpReview/person_form.html'
 
 
 class ReviewDetailView(LoginRequiredMixin, generic.DetailView):
     model = Review
-    template_name = 'empreview/review_detail.html'
+    template_name = 'EmpReview/review_detail.html'
 
 
 
 class ApprovalDetailView(LoginRequiredMixin, generic.DetailView):
     model = Approval
-    template_name = 'empreview/approval_detail.html'
+    template_name = 'EmpReview/approval_detail.html'
 
 
 class ReviewsByRequester(LoginRequiredMixin, generic.ListView):
     model = Review
-    template_name = 'empreview/my_created_reviews.html'
+    template_name = 'EmpReview/my_created_reviews.html'
     paginate_by = 10
 
     def get_queryset(self):
@@ -121,7 +121,7 @@ class ReviewsByRequester(LoginRequiredMixin, generic.ListView):
 
 class ReviewsByApprover(LoginRequiredMixin, generic.ListView):
     model = Review
-    template_name = 'empreview/reviews_approval.html'
+    template_name = 'EmpReview/reviews_approval.html'
     paginate_by = 10
 
     def get_queryset(self):
@@ -171,7 +171,7 @@ def add_person(request):
 
         form = PersonForm()
 
-    return render(request, 'empreview/person_form.html', {"form": form, "user": request.user})
+    return render(request, 'EmpReview/person_form.html', {"form": form, "user": request.user})
 
 
 class PersonUpdate(UpdateView):
@@ -251,7 +251,7 @@ def add_review(request, pk=None):
 class ReviewUpdate(UpdateView):
     model = Review
     fields = '__all__'
-    template_name = 'empreview/review_form.html'
+    template_name = 'EmpReview/review_form.html'
 @login_required
 class ReviewDelete(DeleteView):
     pass
@@ -297,7 +297,7 @@ def add_approval(request, pk):
     else:
         form = ApprovalForm()
 
-    return render(request, 'empreview/approval_form.html', {'object': review_instance, 'form': form, 'id':id})
+    return render(request, 'EmpReview/approval_form.html', {'object': review_instance, 'form': form, 'id':id})
 
 
 def success(request, stype):
@@ -405,4 +405,4 @@ def scratch_test(request):
     data = Employee.objects.all().filter(user__first_name__istartswith='L')
     emps = data
 
-    return render(request, 'empreview/scratchtest.html', {'emps': emps})
+    return render(request, 'EmpReview/scratchtest.html', {'emps': emps})
