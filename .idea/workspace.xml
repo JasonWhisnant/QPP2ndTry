@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Renamed people-choice.html to people_choice.html&#10;Refactored to account for change">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-    </list>
+    <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Refactored folder EmpReview/templates/EmpReview to EmpReview/templates/empreview to try to get rid of persistent html errors" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679497969313</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Refactored folder EmpReview/templates/EmpReview to EmpReview/templates/empreview to try to get rid of persistent html errors">
+      <created>1679501307672</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679501307672</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +184,7 @@
     <MESSAGE value="update to models" />
     <MESSAGE value="update to models&#10;Update to settings.py to attempt to solve template not found" />
     <MESSAGE value="Renamed people-choice.html to people_choice.html&#10;Refactored to account for change" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed people-choice.html to people_choice.html&#10;Refactored to account for change" />
+    <MESSAGE value="Refactored folder EmpReview/templates/EmpReview to EmpReview/templates/empreview to try to get rid of persistent html errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored folder EmpReview/templates/EmpReview to EmpReview/templates/empreview to try to get rid of persistent html errors" />
   </component>
 </project>

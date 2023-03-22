@@ -9,7 +9,7 @@ import uuid
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('empreview', '0005_alter_approval_approval_date_and_more'),
+        ('EmpReview', '0005_alter_approval_approval_date_and_more'),
     ]
 
     operations = [
@@ -36,12 +36,12 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='person',
             name='employee',
-            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='employee', to='empreview.employee'),
+            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='employee', to='EmpReview.employee'),
         ),
         migrations.AddField(
             model_name='person',
             name='mgr_name',
-            field=models.ForeignKey(default=0, help_text='Manager Name', null=True, on_delete=django.db.models.deletion.CASCADE, related_name='Manager_Name', to='empreview.employee'),
+            field=models.ForeignKey(default=0, help_text='Manager Name', null=True, on_delete=django.db.models.deletion.CASCADE, related_name='Manager_Name', to='EmpReview.employee'),
         ),
         migrations.AlterField(
             model_name='approval',
