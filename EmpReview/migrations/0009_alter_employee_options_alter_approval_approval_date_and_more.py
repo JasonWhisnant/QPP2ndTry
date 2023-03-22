@@ -8,7 +8,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('EmpReview', '0008_remove_employee_first_name_remove_employee_last_name_and_more'),
+        ('empreview', '0008_remove_employee_first_name_remove_employee_last_name_and_more'),
     ]
 
     operations = [
@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='person',
             name='mgr_name',
-            field=models.ForeignKey(default=None, help_text='Manager Name', null=True, on_delete=django.db.models.deletion.CASCADE, related_name='Manager_Name', to='EmpReview.employee'),
+            field=models.ForeignKey(default=None, help_text='Manager Name', null=True, on_delete=django.db.models.deletion.CASCADE, related_name='Manager_Name', to='empreview.employee'),
         ),
         migrations.AlterField(
             model_name='review',

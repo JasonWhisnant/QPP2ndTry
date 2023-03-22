@@ -8,7 +8,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('EmpReview', '0004_alter_approval_approval_date_and_more'),
+        ('empreview', '0004_alter_approval_approval_date_and_more'),
     ]
 
     operations = [
@@ -20,17 +20,17 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='approval',
             name='final_approver',
-            field=models.ForeignKey(help_text='Final Approver', on_delete=django.db.models.deletion.DO_NOTHING, to='EmpReview.employee'),
+            field=models.ForeignKey(help_text='Final Approver', on_delete=django.db.models.deletion.DO_NOTHING, to='empreview.employee'),
         ),
         migrations.AlterField(
             model_name='approval',
             name='person',
-            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.DO_NOTHING, to='EmpReview.person'),
+            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.DO_NOTHING, to='empreview.person'),
         ),
         migrations.AlterField(
             model_name='approval',
             name='review',
-            field=models.OneToOneField(null=True, on_delete=django.db.models.deletion.DO_NOTHING, to='EmpReview.review'),
+            field=models.OneToOneField(null=True, on_delete=django.db.models.deletion.DO_NOTHING, to='empreview.review'),
         ),
         migrations.AlterField(
             model_name='employee',
@@ -45,12 +45,12 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='review',
             name='approver',
-            field=models.ForeignKey(help_text='Manager who will be approving', max_length=50, on_delete=django.db.models.deletion.DO_NOTHING, related_name='appover', to='EmpReview.employee'),
+            field=models.ForeignKey(help_text='Manager who will be approving', max_length=50, on_delete=django.db.models.deletion.DO_NOTHING, related_name='appover', to='empreview.employee'),
         ),
         migrations.AlterField(
             model_name='review',
             name='person',
-            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.DO_NOTHING, to='EmpReview.person'),
+            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.DO_NOTHING, to='empreview.person'),
         ),
         migrations.AlterField(
             model_name='review',
@@ -60,6 +60,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='review',
             name='reviewer',
-            field=models.ForeignKey(help_text='Manager writing the review', null=True, on_delete=django.db.models.deletion.DO_NOTHING, related_name='reviewer', to='EmpReview.employee'),
+            field=models.ForeignKey(help_text='Manager writing the review', null=True, on_delete=django.db.models.deletion.DO_NOTHING, related_name='reviewer', to='empreview.employee'),
         ),
     ]

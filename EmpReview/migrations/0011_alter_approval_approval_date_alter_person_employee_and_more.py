@@ -8,7 +8,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('EmpReview', '0010_alter_approval_approval_date_alter_review_person_and_more'),
+        ('empreview', '0010_alter_approval_approval_date_alter_review_person_and_more'),
     ]
 
     operations = [
@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='person',
             name='employee',
-            field=models.OneToOneField(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='employee', to='EmpReview.employee'),
+            field=models.OneToOneField(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='employee', to='empreview.employee'),
         ),
         migrations.AlterField(
             model_name='review',

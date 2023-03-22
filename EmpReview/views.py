@@ -399,4 +399,4 @@ def scratch_test(request):
     data = Employee.objects.all().filter(user__first_name__istartswith='L')
     emps = data
 
-    return render(request,'empreview/scratchtest.html', {'emps': emps})
+    return render(request, 'empreview/scratchtest.html', {'emps': emps})

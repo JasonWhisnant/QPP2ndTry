@@ -7,7 +7,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('EmpReview', '0007_employee_first_name_employee_last_name_and_more'),
+        ('empreview', '0007_employee_first_name_employee_last_name_and_more'),
     ]
 
     operations = [

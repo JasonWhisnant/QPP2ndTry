@@ -10,7 +10,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('EmpReview', '0002_person_mgr_first_name_person_mgr_last_name_and_more'),
+        ('empreview', '0002_person_mgr_first_name_person_mgr_last_name_and_more'),
     ]
 
     operations = [
