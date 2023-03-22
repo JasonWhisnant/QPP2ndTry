@@ -166,7 +166,7 @@ def add_person(request):
 
         form = PersonForm()
 
-    return render(request, 'EmpReview/person_form.html', {"form": form, "user": request.user})
+    return render(request, 'empreview/person_form.html', {"form": form, "user": request.user})
 
 
 class PersonUpdate(UpdateView):
@@ -291,7 +291,7 @@ def add_approval(request, pk):
     else:
         form = ApprovalForm()
 
-    return render(request, 'EmpReview/approval_form.html', {'object': review_instance, 'form': form, 'id':id})
+    return render(request, 'empreview/approval_form.html', {'object': review_instance, 'form': form, 'id':id})
 
 
 def success(request, stype):
@@ -399,4 +399,4 @@ def scratch_test(request):
     data = Employee.objects.all().filter(user__first_name__istartswith='L')
     emps = data
 
-    return render(request,'EmpReview/scratchtest.html', {'emps': emps})
+    return render(request,'empreview/scratchtest.html', {'emps': emps})
