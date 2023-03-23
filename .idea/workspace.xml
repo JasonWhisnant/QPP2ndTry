@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Refactor to return empreview to title case">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Refactor to return empreview to title case" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +102,7 @@
       <workItem from="1678817999361" duration="1033000" />
       <workItem from="1678904057023" duration="8267000" />
       <workItem from="1679514441021" duration="3783000" />
-      <workItem from="1679582510016" duration="5445000" />
+      <workItem from="1679582510016" duration="5814000" />
     </task>
     <task id="LOCAL-00001" summary="update to models">
       <created>1679337287664</created>
@@ -178,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679515245603</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Refactor to return empreview to title case">
+      <created>1679600610430</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679600610430</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +198,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="RevertTo3/10" />
+                        <option value="origin/testing-0320" />
                       </list>
                     </value>
                   </entry>
