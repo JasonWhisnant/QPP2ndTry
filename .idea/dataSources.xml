@@ -10,14 +10,6 @@
       <jdbc-url>jdbc:postgresql://server881421496.postgres.database.azure.com:5432/{your_database}?user=guiltypeacock0&amp;password={your_password}&amp;sslmode=require</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="apptesting@server881421496.postgres.database.azure.com" uuid="e29d4eb5-8a1c-4f13-80dc-1981b14cf51c">
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <configured-by-url>true</configured-by-url>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://server881421496.postgres.database.azure.com:5432/apptesting?user=guiltypeacock0&amp;password=o8Y37tDQpOIwMZBl1KBJNw&amp;sslmode=require</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
     <data-source source="LOCAL" name="db.sqlite3" uuid="1c40db4f-512e-429c-a95d-294d0644b826">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="added template redirects to class-based views">
+    <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Refactor to return empreview to title case">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +53,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;import_schema_mapping&quot;: &quot;&lt;schema-mapping&gt;\n  &lt;databases&gt;\n    &lt;list&gt;\n      &lt;schema-mapping-item&gt;\n        &lt;source-data-source-id&gt;1c40db4f-512e-429c-a95d-294d0644b826&lt;/source-data-source-id&gt;\n        &lt;source-path&gt;schema/&amp;quot;main&amp;quot;&lt;/source-path&gt;\n        &lt;target-data-source-id&gt;f048cee2-33db-4c90-bedd-a44d58bda551&lt;/target-data-source-id&gt;\n        &lt;target-path&gt;database/&amp;quot;testing&amp;quot;/schema/&amp;quot;public&amp;quot;&lt;/target-path&gt;\n      &lt;/schema-mapping-item&gt;\n    &lt;/list&gt;\n  &lt;/databases&gt;\n&lt;/schema-mapping&gt;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jason.Whisnant/PycharmProjects/PeopleTeam&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jason.Whisnant/DB Data 03202023/EmpReview_employee.csv&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -103,7 +105,8 @@
       <workItem from="1678806389558" duration="5960000" />
       <workItem from="1678817999361" duration="1033000" />
       <workItem from="1678904057023" duration="8267000" />
-      <workItem from="1679514441021" duration="448000" />
+      <workItem from="1679514441021" duration="3783000" />
+      <workItem from="1679582510016" duration="5445000" />
     </task>
     <task id="LOCAL-00001" summary="update to models">
       <created>1679337287664</created>
@@ -168,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679503091038</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Refactor to return empreview to title case">
+      <created>1679515245603</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679515245603</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +213,7 @@
     <MESSAGE value="Renamed people-choice.html to people_choice.html&#10;Refactored to account for change" />
     <MESSAGE value="Refactored folder EmpReview/templates/EmpReview to EmpReview/templates/empreview to try to get rid of persistent html errors" />
     <MESSAGE value="added template redirects to class-based views" />
-    <option name="LAST_COMMIT_MESSAGE" value="added template redirects to class-based views" />
+    <MESSAGE value="Refactor to return empreview to title case" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor to return empreview to title case" />
   </component>
 </project>
