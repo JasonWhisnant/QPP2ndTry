@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Refactor to return empreview to title case" />
+    <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Adding prod settings" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,7 +102,7 @@
       <workItem from="1678817999361" duration="1033000" />
       <workItem from="1678904057023" duration="8267000" />
       <workItem from="1679514441021" duration="3783000" />
-      <workItem from="1679582510016" duration="5814000" />
+      <workItem from="1679582510016" duration="6554000" />
     </task>
     <task id="LOCAL-00001" summary="update to models">
       <created>1679337287664</created>
@@ -181,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679600610430</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Adding prod settings">
+      <created>1679602558577</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679602558577</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +224,7 @@
     <MESSAGE value="Refactored folder EmpReview/templates/EmpReview to EmpReview/templates/empreview to try to get rid of persistent html errors" />
     <MESSAGE value="added template redirects to class-based views" />
     <MESSAGE value="Refactor to return empreview to title case" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor to return empreview to title case" />
+    <MESSAGE value="Adding prod settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding prod settings" />
   </component>
 </project>
