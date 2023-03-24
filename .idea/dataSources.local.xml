@@ -46,5 +46,23 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="postgres@helpdesk-database.postgres.database.azure.com" uuid="acfac797-606c-4517-a848-9f5f0585b44f">
+      <database-info product="PostgreSQL" version="13.9" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.5.0" dbms="POSTGRES" exact-version="13.9" exact-driver-version="42.5">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>guiltypeacock0</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node negative="1">
+            <node kind="database" qname="@">
+              <node kind="schema" qname="@" />
+            </node>
+            <node kind="database" qname="postgres" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
   </component>
 </project>
