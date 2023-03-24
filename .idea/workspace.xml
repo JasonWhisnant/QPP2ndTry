@@ -122,7 +122,7 @@
       <workItem from="1678817999361" duration="1033000" />
       <workItem from="1678904057023" duration="8267000" />
       <workItem from="1679514441021" duration="3783000" />
-      <workItem from="1679582510016" duration="22792000" />
+      <workItem from="1679582510016" duration="23412000" />
     </task>
     <task id="LOCAL-00001" summary="update to models">
       <created>1679337287664</created>
@@ -306,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679690275581</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Adding prod settings&#10;Added Logging to prod settings">
+      <created>1679690895512</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1679690895512</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
