@@ -38,7 +38,7 @@ LOGGING = {
 
 # Configure the domain name using the environment variable
 # that Azure automatically creates for us.
-ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME'], '169.254.130.3'] if 'WEBSITE_HOSTNAME' in os.environ else []
+ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME'], '169.254.130.*'] if 'WEBSITE_HOSTNAME' in os.environ else []
 print("All Allowed Hosts in Prod:", ALLOWED_HOSTS)
 CSRF_TRUSTED_ORIGINS = ['https://' + os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
 DEBUG = False

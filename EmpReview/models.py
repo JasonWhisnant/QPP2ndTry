@@ -205,8 +205,10 @@ class Approval(models.Model):
 def create_employee_profile(sender, instance, created, **kwargs):
     if created:
         Employee.objects.create(user=instance)
+        print("Profile created for", user)
 
 
 @receiver(post_save, sender=User)
 def save_employee_profile(sender, instance, **kwargs):
     instance.employee.save()
+    print("Profile saved")
