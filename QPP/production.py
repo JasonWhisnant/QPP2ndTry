@@ -3,6 +3,8 @@ import os
 from .settings import *  # noqa
 from .settings import BASE_DIR
 
+print("BASE_DIR:",BASE_DIR)
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -59,7 +61,7 @@ MIDDLEWARE = [
 ]
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
-STATIC_ROOT = os.path.join(BASE_DIR, 'EmpReview/static')
+STATIC_ROOT = os.path.join(BASE_DIR, '/EmpReview/static')
 
 # Configure Postgres database based on connection string of the libpq Keyword/Value form
 # https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING
@@ -74,3 +76,8 @@ DATABASES = {
         'PASSWORD': conn_str_params['password'],
     }
 }
+
+SECURE_SSL_REDIRECT = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
