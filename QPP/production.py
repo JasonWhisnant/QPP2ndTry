@@ -46,7 +46,7 @@ DEBUG = False
 
 # WhiteNoise configuration
 MIDDLEWARE = [
-    'allow_cidr.middleware.AllowCIDRMiddleware'
+    'allow_cidr.middleware.AllowCIDRMiddleware',
     'django.middleware.security.SecurityMiddleware',
     # Add whitenoise middleware after the security middleware
     'whitenoise.middleware.WhiteNoiseMiddleware',
