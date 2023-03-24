@@ -38,13 +38,15 @@ LOGGING = {
 
 # Configure the domain name using the environment variable
 # that Azure automatically creates for us.
-ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME'], '169.254.130.*'] if 'WEBSITE_HOSTNAME' in os.environ else []
+ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
 print("All Allowed Hosts in Prod:", ALLOWED_HOSTS)
+ALLOWED_CIDR_NETS = ['169.254.130.0/24']
 CSRF_TRUSTED_ORIGINS = ['https://' + os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
 DEBUG = False
 
 # WhiteNoise configuration
 MIDDLEWARE = [
+    'allow_cidr.middleware.AllowCIDRMiddleware'
     'django.middleware.security.SecurityMiddleware',
     # Add whitenoise middleware after the security middleware
     'whitenoise.middleware.WhiteNoiseMiddleware',

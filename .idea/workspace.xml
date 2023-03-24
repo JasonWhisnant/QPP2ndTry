@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Adding prod settings&#10;Added Logging to prod settings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmpReview/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmpReview/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QPP/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/QPP/production.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +126,7 @@
       <workItem from="1678817999361" duration="1033000" />
       <workItem from="1678904057023" duration="8267000" />
       <workItem from="1679514441021" duration="3783000" />
-      <workItem from="1679582510016" duration="16426000" />
+      <workItem from="1679582510016" duration="17661000" />
     </task>
     <task id="LOCAL-00001" summary="update to models">
       <created>1679337287664</created>
@@ -274,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679669868992</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Adding prod settings&#10;Added Logging to prod settings">
+      <created>1679670856561</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1679670856561</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
