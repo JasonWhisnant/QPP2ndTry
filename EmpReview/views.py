@@ -51,7 +51,7 @@ def search_person(request):
         name = request.GET['name'].capitalize()
 
         all_users = Employee.objects.all().filter(user__first_name=name) | Employee.objects.all().filter(user__last_name=name)
-    return render(request, 'empreview/people-choice.html', {"all_users": all_users})
+    return render(request, 'EmpReview/people-choice.html', {"all_users": all_users})
 
 def get_or_create(request, id):
 
@@ -78,7 +78,7 @@ def PersonDetail(request, pk):
     except Person.DoesNotExist:
         raise Http404("Person does not exist. Person Detail View")
     form = ReviewForm()
-    return render(request, 'empreview/person_detail.html', context={'person':person, 'form':form})
+    return render(request, 'EmpReview/person_detail.html', context={'person':person, 'form':form})
 
 
 class PersonUpdateView(LoginRequiredMixin, generic.UpdateView):
@@ -107,7 +107,7 @@ class ApprovalDetailView(LoginRequiredMixin, generic.DetailView):
 
 class ReviewsByRequester(LoginRequiredMixin, generic.ListView):
     model = Review
-    template_name = 'empreview/my_created_reviews.html'
+    template_name = 'EmpReview/my_created_reviews.html'
     paginate_by = 10
 
     def get_queryset(self):
@@ -116,7 +116,7 @@ class ReviewsByRequester(LoginRequiredMixin, generic.ListView):
 
 class ReviewsByApprover(LoginRequiredMixin, generic.ListView):
     model = Review
-    template_name = 'empreview/reviews_approval.html'
+    template_name = 'EmpReview/reviews_approval.html'
     paginate_by = 10
 
     def get_queryset(self):
