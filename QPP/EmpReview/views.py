@@ -51,7 +51,7 @@ def search_person(request):
         name = request.GET['name'].capitalize()
 
         all_users = Employee.objects.all().filter(user__first_name=name) | Employee.objects.all().filter(user__last_name=name)
-    return render(request, 'empreview/people-choice.html', {"all_users": all_users})
+    return render(request, 'EmpReview/people-choice.html', {"all_users": all_users})
 
 def get_or_create(request, id):
 
