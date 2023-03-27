@@ -18,5 +18,17 @@
       <jdbc-url>jdbc:postgresql://server881421496.postgres.database.azure.com:5432/apptesting?user=guiltypeacock0&amp;password=o8Y37tDQpOIwMZBl1KBJNw&amp;sslmode=require</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="db" uuid="dab2ba97-112d-4bff-b737-f556e2bcf96b">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Jason.Whisnant\OneDrive - ESO\Documents\GitHub\QPP2ndTry\QPP\db.sqlite3</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.40.1/sqlite-jdbc-3.40.1.jar</url>
+        </library>
+      </libraries>
+    </data-source>
   </component>
 </project>

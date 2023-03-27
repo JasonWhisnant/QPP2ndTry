@@ -14,5 +14,20 @@
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
       <schema-mapping />
     </data-source>
+    <data-source name="db" uuid="dab2ba97-112d-4bff-b737-f556e2bcf96b">
+      <database-info product="SQLite" version="3.40.1" jdbc-version="4.2" driver-name="SQLite JDBC" driver-version="3.40.1.0" dbms="SQLITE" exact-version="3.40.1" exact-driver-version="3.40">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <auth-provider>no-auth</auth-provider>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="@" />
+            <name qname="main" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
   </component>
 </project>
