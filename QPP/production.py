@@ -41,7 +41,7 @@ LOGGING = {
 # Configure the domain name using the environment variable
 # that Azure automatically creates for us.
 ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
-ALLOWED_CIDR_NETS = ['169.254.130.0/22']
+ALLOWED_CIDR_NETS = ['169.254.128.0/22']
 print("All Allowed Hosts in Prod:", ALLOWED_HOSTS)
 
 
