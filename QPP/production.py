@@ -41,8 +41,44 @@ LOGGING = {
 # Configure the domain name using the environment variable
 # that Azure automatically creates for us.
 ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
-print("All Allowed Hosts in Prod:", ALLOWED_HOSTS)
 ALLOWED_CIDR_NETS = ['169.254.130.0/24']
+print("All Allowed Hosts in Prod:", ALLOWED_HOSTS)
+
+# debug script for static files error
+#######################################################
+
+from allow_cidr.middleware import AllowCIDRMiddleware as ACM
+import ipaddress
+from django.http.request import split_domain_port, validate_host
+from django.core.exceptions import DisallowedHost
+ORIG_ALLOWED_HOSTS = []
+class checkAllowCidr(ACM):
+    def __call__(self,request):
+        host = request.get_host()
+        domain, port = split_domain_port(host)
+
+        if not domain or not validate_host(domain, ORIG_ALLOWED_HOSTS):
+            should_raise = True
+            for net in self.allowed_cidr_nets:
+                try:
+                    if ipaddress.ip_address(domain) in net:
+                        should_raise = False
+                        curr = net
+                        break
+                except ValueError:
+                    break
+
+            if should_raise:
+                raise DisallowedHost("Invalid HTTP_HOST header: %r. Should be in %r" % host, list(ipaddress.ip_network(curr).hosts()))
+            else:
+                print(curr, "checks out.")
+
+
+checkAllowCidr(ALLOWED_CIDR_NETS)
+
+####################################################
+# End debug
+
 CSRF_TRUSTED_ORIGINS = ['https://' + os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
 DEBUG = False
 
@@ -61,7 +97,9 @@ MIDDLEWARE = [
 ]
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+print("Pulled STATICFILES_STORAGE from Production")
 STATIC_ROOT = os.path.join(BASE_DIR, 'EmpReview/static')
+print("Pulled STATIC_ROOT from production.")
 
 # Configure Postgres database based on connection string of the libpq Keyword/Value form
 # https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING
