@@ -142,10 +142,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATICFILES_DIRS = [
+STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "/EmpReview/static"),
     os.path.join(BASE_DIR, "/QPP/static"),
-    ]
+)
 
 print("BASE_DIR=", BASE_DIR)
 print("Static Path=", os.path.join(BASE_DIR, '/EmpReview/static/'))
