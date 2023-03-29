@@ -64,8 +64,8 @@ MIDDLEWARE = [
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    ("QPP", "/EmpReview/static"),
-    "/QPP/static",
+    ('QPP', os.path.join((BASE_DIR), "/EmpReview/static")),
+    os.path.join((BASE_DIR),"/QPP/static"),
     ]
 
 print("Pulled STATICFILES_STORAGE from Production")
