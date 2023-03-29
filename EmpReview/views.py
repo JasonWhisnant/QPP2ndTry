@@ -15,18 +15,6 @@ from datetime import datetime
 from django.contrib.auth.models import User
 from django.db import IntegrityError
 
-# View for Autocomplete
-
-class NameAutoComplete(autocomplete.Select2QuerySetView):
-    def get_queryset(self):
-        #if not self.request.user.is_authenticated:
-            #return Employee.objects.none()
-        qs = Employee.objects.all()
-
-        if self.q:
-            qs = qs.filter(user__first_name__istartswith=self.q)
-
-        return qs
 @login_required
 def index(request):
     review_approval_needed = Review.objects.filter(approver__user__username=request.user).filter(ready_for_review=True).count()

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Commented out whitenoise storage" />
+    <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Commented out whitenoise storage">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,20 +133,6 @@
       <workItem from="1678904057023" duration="8267000" />
       <workItem from="1679514441021" duration="3783000" />
       <workItem from="1679582510016" duration="24694000" />
-    </task>
-    <task id="LOCAL-00003" summary="Renamed people-choice.html to people_choice.html&#10;Refactored to account for change">
-      <created>1679368535560</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1679368535560</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Renamed people-choice.html to people_choice.html&#10;Refactored to account for change">
-      <created>1679368730111</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1679368730111</updated>
     </task>
     <task id="LOCAL-00005" summary="Renamed people-choice.html to people_choice.html&#10;Refactored to account for change">
       <created>1679368980032</created>
@@ -475,7 +463,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680125717924</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Commented out whitenoise storage">
+      <created>1680126078420</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1680126078420</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Commented out whitenoise storage">
+      <created>1680126398388</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1680126398389</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
