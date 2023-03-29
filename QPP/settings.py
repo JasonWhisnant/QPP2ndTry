@@ -146,6 +146,7 @@ STATICFILES_DIRS = [
     ('QPP', os.path.join(BASE_DIR, "/EmpReview/static")),
     os.path.join(BASE_DIR, "/QPP/static"),
     ]
+print(BASE_DIR)
 STATIC_URL = '/static/'
 print("Pulled STATIC_URL from Settings")
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
