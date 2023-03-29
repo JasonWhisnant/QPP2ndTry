@@ -142,19 +142,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "/EmpReview/static"),
-    os.path.join(BASE_DIR, "/QPP/static"),
-)
-
-print("BASE_DIR=", BASE_DIR)
-print("Static Path=", os.path.join(BASE_DIR, '/EmpReview/static/'))
 STATIC_URL = '/static/'
-print("Pulled STATIC_URL from Settings")
+# print("Pulled STATIC_URL from Settings")
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
-print("Pulled STATICFILES_STORAGE from Settings")
+# print("Pulled STATICFILES_STORAGE from Settings")
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-print("Pulled STATIC_ROOT from Settings.")
+# print("Pulled STATIC_ROOT from Settings.")
 print("SETTINGS:\nStaticFiles Dirs: ", STATICFILES_DIRS, "\nStatic URL: ", STATIC_URL, "\nStaticFiles Storage: ", STATICFILES_STORAGE, "\nStatic Root: ", STATIC_ROOT)
 
 # Default primary key field type
