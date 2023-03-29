@@ -69,7 +69,7 @@ STATICFILES_DIRS = [
     ]
 
 print("Pulled STATICFILES_STORAGE from Production")
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 print("Pulled STATIC_ROOT from production.")
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
