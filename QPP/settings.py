@@ -143,10 +143,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATICFILES_DIRS = [
-    ('QPP', os.path.join(BASE_DIR, "/EmpReview/static")),
+    os.path.join(BASE_DIR, "/EmpReview/static"),
     os.path.join(BASE_DIR, "/QPP/static"),
     ]
-print(BASE_DIR)
+
+print("BASE_DIR=", BASE_DIR)
+print("Static Path=", os.path.join(BASE_DIR, '/EmpReview/static/'))
 STATIC_URL = '/static/'
 print("Pulled STATIC_URL from Settings")
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py and settings.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py and settings.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py and settings.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py and settings.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -421,7 +419,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680113230344</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py and settings.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py and settings.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist">
+      <created>1680113815593</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1680113815593</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py and settings.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py and settings.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist">
+      <created>1680114932544</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1680114932544</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
