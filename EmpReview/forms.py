@@ -1,7 +1,6 @@
 from django.forms import ModelForm, ModelChoiceField, TextInput, Select
 from EmpReview.models import Person, Review, Approval, Employee
 from django.utils.translation import gettext_lazy as _
-from dal import autocomplete
 
 
 class EmpSearch(ModelForm):

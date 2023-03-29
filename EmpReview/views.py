@@ -14,7 +14,6 @@ from django.http import HttpResponseRedirect
 from datetime import datetime
 from django.contrib.auth.models import User
 from django.db import IntegrityError
-from dal import autocomplete
 
 # View for Autocomplete
 
