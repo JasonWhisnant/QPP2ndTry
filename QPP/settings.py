@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-u&)3i60w4nabvbmgfp)ecm+w$3_8n9p3c=#*855i!xbz^s=2nk
 # SECURITY WARNING: don't run with debug turned on in production!
 ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
 CSRF_TRUSTED_ORIGINS = ['https://' + os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
-DEBUG = True
+DEBUG = False
 # Application definition
 
 INSTALLED_APPS = [
@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'EmpReview.apps.EmpreviewConfig',
     # 'okta_oauth2.apps.OktaOauth2Config',
@@ -44,7 +45,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     # Add whitenoise middleware after the security middleware
-    # 'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

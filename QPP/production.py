@@ -61,12 +61,23 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    ("QPP", "/EmpReview/static"),
+    "/QPP/static",
+    ]
+
 print("Pulled STATICFILES_STORAGE from Production")
-STATIC_ROOT = os.path.join(BASE_DIR, 'EmpReview/static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 print("Pulled STATIC_ROOT from production.")
-print("Static URL: ", STATIC_URL, "\nStaticFiles Storage: ", STATICFILES_STORAGE, "\nStatic Root: ", STATIC_ROOT)
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+print("Static URL: ", STATIC_URL,
+      "\nStaticFiles Storage: ", STATICFILES_STORAGE,
+      "\nStatic Root: ", STATIC_ROOT
+      )
+
 
 # Configure Postgres database based on connection string of the libpq Keyword/Value form
 # https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING
