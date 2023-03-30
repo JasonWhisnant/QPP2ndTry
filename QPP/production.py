@@ -46,7 +46,7 @@ print("All Allowed Hosts in Prod:", ALLOWED_HOSTS)
 
 
 CSRF_TRUSTED_ORIGINS = ['https://' + os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
-DEBUG = False
+DEBUG = os.environ.get("DEBUG", False)
 
 # WhiteNoise configuration
 MIDDLEWARE = [
@@ -90,8 +90,3 @@ DATABASES = {
         'PASSWORD': conn_str_params['password'],
     }
 }
-
-SECURE_SSL_REDIRECT = True
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
