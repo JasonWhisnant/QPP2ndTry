@@ -69,7 +69,7 @@ if not os.path.isdir(STATIC_ROOT):
     os.makedirs(STATIC_ROOT, mode=0o755)
     print("Static Directory Created.")
 print("Pulled STATIC_ROOT from production.")
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 # STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 print("Static URL: ", STATIC_URL,
       "\nStaticFiles Storage: ", STATICFILES_STORAGE,

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Commented out whitenoise storage">
+    <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Making some changes to attempt to get whitenoise working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QPP/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/QPP/production.py" afterDir="false" />
     </list>
@@ -134,13 +134,6 @@
       <workItem from="1678904057023" duration="8267000" />
       <workItem from="1679514441021" duration="3783000" />
       <workItem from="1679582510016" duration="24694000" />
-    </task>
-    <task id="LOCAL-00006" summary="Renamed people-choice.html to people_choice.html&#10;Refactored to account for change">
-      <created>1679497969313</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1679497969313</updated>
     </task>
     <task id="LOCAL-00007" summary="Refactored folder EmpReview/templates/EmpReview to EmpReview/templates/empreview to try to get rid of persistent html errors">
       <created>1679501307672</created>
@@ -478,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680126856032</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Making some changes to attempt to get whitenoise working">
+      <created>1680196452964</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1680196452964</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,6 +525,7 @@
     <MESSAGE value="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist" />
     <MESSAGE value="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py and settings.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py and settings.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist" />
     <MESSAGE value="Commented out whitenoise storage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commented out whitenoise storage" />
+    <MESSAGE value="Making some changes to attempt to get whitenoise working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Making some changes to attempt to get whitenoise working" />
   </component>
 </project>
