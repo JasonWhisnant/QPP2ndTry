@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Commented out whitenoise storage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QPP/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/QPP/production.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,13 +134,6 @@
       <workItem from="1678904057023" duration="8267000" />
       <workItem from="1679514441021" duration="3783000" />
       <workItem from="1679582510016" duration="24694000" />
-    </task>
-    <task id="LOCAL-00005" summary="Renamed people-choice.html to people_choice.html&#10;Refactored to account for change">
-      <created>1679368980032</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1679368980032</updated>
     </task>
     <task id="LOCAL-00006" summary="Renamed people-choice.html to people_choice.html&#10;Refactored to account for change">
       <created>1679497969313</created>
@@ -477,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680126398389</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Commented out whitenoise storage">
+      <created>1680126856032</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1680126856032</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
