@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'eso-qppapp'
           slot-name: 'testing'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CB0363848BA043A197477BCE1CE1358E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8538C59DAE424D0B98311EE9D2ECE6F8 }}
