@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Making some changes to attempt to get whitenoise working">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QPP/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/QPP/production.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,13 +133,6 @@
       <workItem from="1678904057023" duration="8267000" />
       <workItem from="1679514441021" duration="3783000" />
       <workItem from="1679582510016" duration="24694000" />
-    </task>
-    <task id="LOCAL-00008" summary="Refactored folder EmpReview/templates/EmpReview to EmpReview/templates/empreview to try to get rid of persistent html errors">
-      <created>1679501927426</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1679501927426</updated>
     </task>
     <task id="LOCAL-00009" summary="added template redirects to class-based views">
       <created>1679503091038</created>
@@ -479,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680197041349</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Making some changes to attempt to get whitenoise working">
+      <created>1680208584768</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1680208584769</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
