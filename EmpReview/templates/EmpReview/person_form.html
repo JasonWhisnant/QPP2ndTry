@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h3>Please add any missing information or update existing information.</h3>
+    <h3>Please complete all fields below.</h3>
     <br><br>
     <h5>{{ self.object.name }}</h5>
     <hr>
@@ -10,7 +10,7 @@
         <table>
             {{ form.as_table }}
         </table>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Next">
     </form>
 {% endblock %}
 

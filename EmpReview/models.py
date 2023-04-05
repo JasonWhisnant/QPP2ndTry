@@ -27,15 +27,15 @@ class Employee(models.Model):
 class Person(models.Model):
     id = models.UUIDField(default=uuid.uuid4, primary_key=True)
     employee = models.OneToOneField(Employee, on_delete=models.CASCADE, related_name='employee', null=True)
-    mgr_name = models.ForeignKey(Employee, on_delete=models.CASCADE, default=None, help_text="Manager Name",
-                                 related_name="Manager_Name", null=True)
+    manager_Name = models.ForeignKey(Employee, on_delete=models.CASCADE, default=None,
+                                     related_name="Manager_Name", null=True)
 
-    current_position = models.CharField(max_length=30, help_text="Current Position")
-    new_position = models.CharField(max_length=30, help_text="Promotion Position")
+    current_position = models.CharField(max_length=100)
+    new_position = models.CharField(max_length=100)
 
     PATHS = (
-        ('m', 'Management'),
-        ('e', 'Expert'),
+        ('m', 'Management -- this is any position that involves managing people'),
+        ('e', 'Expert -- this is any position that does not involve managing people'),
     )
 
     current_path = models.CharField(
@@ -43,13 +43,13 @@ class Person(models.Model):
         choices=PATHS,
         blank=True,
         default='e',
-        help_text="Current Career Path")
-    new_path = models.CharField(
+    )
+    new_Career_Path = models.CharField(
         max_length=1,
         choices=PATHS,
         blank=True,
         default='e',
-        help_text="New Career Path (choose even if the path is not changing)"
+        help_text="(choose even if the path is not changing)"
     )
 
     JOBS = (
@@ -61,18 +61,17 @@ class Person(models.Model):
         ('c', 'Client Services'),
     )
 
-    current_job = models.CharField(
+    current_Job_Category = models.CharField(
         max_length=1,
         choices=JOBS,
         blank=True,
-        help_text="Current Job Category"
     )
 
-    new_job = models.CharField(
+    new_Job_Category = models.CharField(
         max_length=1,
         choices=JOBS,
         blank=True,
-        help_text="New Job Category (choose even if the category is not changing)"
+        help_text="(choose even if the category is not changing)"
     )
 
     LEVELS = (

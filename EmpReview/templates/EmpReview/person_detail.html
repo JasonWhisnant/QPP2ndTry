@@ -23,7 +23,7 @@
     <hr>
     <br><br>
 
-    <h3>New Review</h3>
+    <h3>Assessment</h3>
     {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
     <form action="{% url 'review-create' person.id %}" method="post">

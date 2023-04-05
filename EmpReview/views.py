@@ -17,8 +17,10 @@ from django.db import IntegrityError
 
 @login_required
 def index(request):
-    review_approval_needed = Review.objects.filter(approver__user__username=request.user).filter(ready_for_review=True).count()
-    review_update_needed = Review.objects.filter(reviewer__user__username=request.user).filter(ready_for_review=False).count()
+    # review_approval_needed = Review.objects.filter(approver__user__username=request.user).filter(ready_for_review=True).count()
+    review_approval_needed = Review.objects.filter(approver__user__username=request.user).count()
+    # review_update_needed = Review.objects.filter(reviewer__user__username=request.user).filter(ready_for_review=False).count()
+    review_update_needed = Review.objects.filter(reviewer__user__username=request.user).count()
 
     context = {
         'review_approval_needed': review_approval_needed,
@@ -65,7 +67,7 @@ def PersonDetail(request, pk):
     try:
         person = Person.objects.get(pk=pk)
     except Person.DoesNotExist:
-        raise Http404("Person does not exist. Person Detail View")
+        raise Http404("Person does not exist.")
     form = ReviewForm()
     return render(request, 'EmpReview/person_detail.html', context={'person':person, 'form':form})
 
@@ -134,20 +136,20 @@ def add_person(request):
             current_position = form.cleaned_data['current_position']
             new_position = form.cleaned_data['new_position']
             current_path = form.cleaned_data['current_path']
-            new_path = form.cleaned_data['new_path']
-            current_job = form.cleaned_data['current_job']
-            new_job = form.cleaned_data['new_job']
+            new_path = form.cleaned_data['new_Career_Path']
+            current_job = form.cleaned_data['current_Job_Category']
+            new_job = form.cleaned_data['new_Job_Category']
             current_level = form.cleaned_data['current_level']
             new_level = form.cleaned_data['new_level']
 
             person.employee = employee
-            person.mgr_name = request.user.employee
+            person.manager_Name = request.user.employee
             person.current_position = current_position
             person.new_position = new_position
             person.current_path = current_path
-            person.new_path = new_path
-            person.current_job = current_job
-            person.new_job = new_job
+            person.new_Career_Path = new_path
+            person.current_Job_Category = current_job
+            person.new_Job_Category = new_job
             person.current_level = current_level
             person.new_level = new_level
             person.save()

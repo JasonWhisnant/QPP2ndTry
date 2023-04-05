@@ -19,9 +19,9 @@ class PersonForm(ModelForm):
             'current_position',
             'new_position',
             'current_path',
-            'new_path',
-            'current_job',
-            'new_job',
+            'new_Career_Path',
+            'current_Job_Category',
+            'new_Job_Category',
             'current_level',
             'new_level',
         )
@@ -31,9 +31,9 @@ class PersonForm(ModelForm):
             'current_position': TextInput(attrs={'class': 'form-control'}),
             'new_position': TextInput(attrs={'class': 'form-control'}),
             'current_path': Select(attrs={'class': 'form-control'}),
-            'new_path': Select(attrs={'class': 'form-control'}),
-            'current_job': Select(attrs={'class': 'form-control'}),
-            'new_job': Select(attrs={'class': 'form-control'}),
+            'new_Career_Path': Select(attrs={'class': 'form-control'}),
+            'current_Job_Category': Select(attrs={'class': 'form-control'}),
+            'new_Job_Category': Select(attrs={'class': 'form-control'}),
             'current_level': Select(attrs={'class': 'form-control'}),
             'new_level': Select(attrs={'class': 'form-control'}),
         }
@@ -43,13 +43,13 @@ class PersonEditForm(ModelForm):
     class Meta:
         model = Person
         fields = (
-            'mgr_name',
+            'manager_Name',
             'current_position',
             'new_position',
             'current_path',
-            'new_path',
-            'current_job',
-            'new_job',
+            'new_Career_Path',
+            'current_Job_Category',
+            'new_Job_Category',
             'current_level',
             'new_level',
         )
@@ -58,9 +58,9 @@ class PersonEditForm(ModelForm):
             'current_position': TextInput(attrs={'class': 'form-control'}),
             'new_position': TextInput(attrs={'class': 'form-control'}),
             'current_path': Select(attrs={'class': 'form-control'}),
-            'new_path': Select(attrs={'class': 'form-control'}),
-            'current_job': Select(attrs={'class': 'form-control'}),
-            'new_job': Select(attrs={'class': 'form-control'}),
+            'new_Career_Path': Select(attrs={'class': 'form-control'}),
+            'current_Job_Category': Select(attrs={'class': 'form-control'}),
+            'new_Job_Category': Select(attrs={'class': 'form-control'}),
             'current_level': Select(attrs={'class': 'form-control'}),
             'new_level': Select(attrs={'class': 'form-control'}),
         }

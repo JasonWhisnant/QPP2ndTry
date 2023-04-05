@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>ESO People Team Home</h1>
-  <p>Welcome to the site for the ESO Performance Review</p>
-  <h2>Dynamic Content</h2>
+  <h1>Quarterly Employee Promotions</h1>
+  <p>Welcome to the site Quarterly Employee Promotions</p>
+
   <p>You have the following items needing attention:</p>
   <ul>
-    <li><strong>Current Reviews awaiting your approval: </strong><a href="{% url 'my_created_reviews' %}">{{review_approval_needed}}</a></li>
+    <li><strong>Requests requiring attention: </strong><a href="{% url 'my_created_reviews' %}">{{review_approval_needed}}</a></li>
     <li><strong>Current Reviews requiring attention: </strong><a href="{% url 'my_created_reviews' %}">{{ review_update_needed }}</a></li>
   </ul>
   <br><br>
   <form action="{% url 'people_choice' %}" method="get">
-    <button type="submit">Start a new review</button>
+    <button type="submit">Start a new request</button>
   </form>
 {% endblock %}
