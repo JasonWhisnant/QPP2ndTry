@@ -45,8 +45,7 @@ def search_person(request):
     paginator = Paginator(all_users, 20)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
-    if all_users.count() > 20:
-        is_paginated = True
+
 
     return render(request, 'EmpReview/people_choice.html', {'page_obj': page_obj, 'is_paginated': is_paginated})
 
