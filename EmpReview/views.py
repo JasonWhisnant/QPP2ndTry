@@ -34,7 +34,7 @@ def index(request):
 def search_person(request):
 
     all_users = {}
-    results = {}
+    is_paginated = False
 
     # print(currentUsers)
     if 'name' in request.GET:
@@ -44,7 +44,10 @@ def search_person(request):
     paginator = Paginator(all_users, 20)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
-    return render(request, 'EmpReview/people_choice.html', {'page_obj', page_obj})
+    if all_users.count() > 20:
+        is_paginated = True
+
+    return render(request, 'EmpReview/people_choice.html', {'page_obj': page_obj, 'is_paginated': is_paginated})
 
 def get_or_create(request, id):
 

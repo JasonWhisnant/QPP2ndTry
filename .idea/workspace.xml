@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Making some changes to attempt to get whitenoise working">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EmpReview/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmpReview/views.py" afterDir="false" />
     </list>
@@ -30,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="JasonWhisnant &lt;124310379+jasonwhisnant@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="testing-0320" />
@@ -137,20 +141,6 @@
       <workItem from="1679582510016" duration="24694000" />
       <workItem from="1680552440214" duration="6132000" />
       <workItem from="1680715331527" duration="758000" />
-    </task>
-    <task id="LOCAL-00011" summary="Refactor to return empreview to title case">
-      <created>1679600610430</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1679600610430</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Adding prod settings">
-      <created>1679602558577</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1679602558577</updated>
     </task>
     <task id="LOCAL-00013" summary="Adding prod settings">
       <created>1679603276568</created>
@@ -481,7 +471,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680810938458</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="fixing pagination">
+      <created>1680815441620</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1680815441620</updated>
+    </task>
+    <task id="LOCAL-00061" summary="fixing pagination">
+      <created>1680816422580</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1680816422580</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,6 +534,7 @@
     <MESSAGE value="Commented out whitenoise storage" />
     <MESSAGE value="Making some changes to attempt to get whitenoise working" />
     <MESSAGE value="Removed secret key and moved to server settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed secret key and moved to server settings" />
+    <MESSAGE value="fixing pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing pagination" />
   </component>
 </project>
