@@ -142,20 +142,6 @@
       <workItem from="1680552440214" duration="6132000" />
       <workItem from="1680715331527" duration="758000" />
     </task>
-    <task id="LOCAL-00013" summary="Adding prod settings">
-      <created>1679603276568</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1679603276568</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Adding prod settings">
-      <created>1679605225252</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1679605225252</updated>
-    </task>
     <task id="LOCAL-00015" summary="Adding prod settings">
       <created>1679605265099</created>
       <option name="number" value="00015" />
@@ -485,7 +471,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680816422580</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="fixing pagination">
+      <created>1680817199483</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1680817199483</updated>
+    </task>
+    <task id="LOCAL-00063" summary="fixing pagination">
+      <created>1680817814946</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1680817814946</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
