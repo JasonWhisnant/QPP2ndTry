@@ -41,9 +41,9 @@ def search_person(request):
         name = request.GET['name'].capitalize()
 
         all_users = Employee.objects.all().filter(user__first_name=name) | Employee.objects.all().filter(user__last_name=name)
-        paginator = Paginator(all_users, 20)
-        page_number = request.GET.get('page')
-        page_obj = paginator.get_page(page_number)
+    paginator = Paginator(all_users, 20)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
     return render(request, 'EmpReview/people_choice.html', {'page_obj', page_obj})
 
 def get_or_create(request, id):
