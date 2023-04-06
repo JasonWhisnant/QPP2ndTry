@@ -24,11 +24,11 @@
       <jdbc-url>jdbc:postgresql://helpdesk-database.postgres.database.azure.com:5432/testing?sslmode=require</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="postgres@helpdesk-database.postgres.database.azure.com" uuid="acfac797-606c-4517-a848-9f5f0585b44f">
+    <data-source source="LOCAL" name="staging@helpdesk-database.postgres.database.azure.com" uuid="acfac797-606c-4517-a848-9f5f0585b44f">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://helpdesk-database.postgres.database.azure.com:5432/postgres</jdbc-url>
+      <jdbc-url>jdbc:postgresql://helpdesk-database.postgres.database.azure.com:5432/staging</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
