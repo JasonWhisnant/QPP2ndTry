@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Making some changes to attempt to get whitenoise working">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmpReview/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmpReview/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmpReview/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmpReview/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmpReview/templates/EmpReview/person_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/EmpReview/templates/EmpReview/person_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmpReview/templates/EmpReview/person_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/EmpReview/templates/EmpReview/person_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmpReview/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/EmpReview/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmpReview/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/EmpReview/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EmpReview/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmpReview/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,13 +137,6 @@
       <workItem from="1679582510016" duration="24694000" />
       <workItem from="1680552440214" duration="6132000" />
       <workItem from="1680715331527" duration="758000" />
-    </task>
-    <task id="LOCAL-00010" summary="Refactor to return empreview to title case">
-      <created>1679515245603</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1679515245603</updated>
     </task>
     <task id="LOCAL-00011" summary="Refactor to return empreview to title case">
       <created>1679600610430</created>
@@ -486,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680209738209</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Removed secret key and moved to server settings">
+      <created>1680810938458</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1680810938458</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,6 +529,7 @@
     <MESSAGE value="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py and settings.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py and settings.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist" />
     <MESSAGE value="Commented out whitenoise storage" />
     <MESSAGE value="Making some changes to attempt to get whitenoise working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Making some changes to attempt to get whitenoise working" />
+    <MESSAGE value="Removed secret key and moved to server settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed secret key and moved to server settings" />
   </component>
 </project>
