@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="Syncing local db">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
+    <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="">
+      <changelist_data name="JasonWhisnant" email="124310379+jasonwhisnant@users.noreply.github.com" date="1679929080000" />
+      <change beforePath="$PROJECT_DIR$/EmpReview/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmpReview/views.py" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="testing-0320" />
+        <entry key="$PROJECT_DIR$" value="testing-0405" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,7 +67,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;import_schema_mapping&quot;: &quot;&lt;schema-mapping&gt;\n  &lt;databases&gt;\n    &lt;list&gt;\n      &lt;schema-mapping-item&gt;\n        &lt;source-data-source-id&gt;1c40db4f-512e-429c-a95d-294d0644b826&lt;/source-data-source-id&gt;\n        &lt;source-path&gt;schema/&amp;quot;main&amp;quot;&lt;/source-path&gt;\n        &lt;target-data-source-id&gt;f048cee2-33db-4c90-bedd-a44d58bda551&lt;/target-data-source-id&gt;\n        &lt;target-path&gt;database/&amp;quot;testing&amp;quot;/schema/&amp;quot;public&amp;quot;&lt;/target-path&gt;\n      &lt;/schema-mapping-item&gt;\n      &lt;schema-mapping-item&gt;\n        &lt;source-data-source-id&gt;f048cee2-33db-4c90-bedd-a44d58bda551&lt;/source-data-source-id&gt;\n        &lt;source-path&gt;database/&amp;quot;testing&amp;quot;/schema/&amp;quot;public&amp;quot;&lt;/source-path&gt;\n        &lt;target-data-source-id&gt;acfac797-606c-4517-a848-9f5f0585b44f&lt;/target-data-source-id&gt;\n        &lt;target-path&gt;database/&amp;quot;postgres&amp;quot;/schema/&amp;quot;public&amp;quot;&lt;/target-path&gt;\n      &lt;/schema-mapping-item&gt;\n    &lt;/list&gt;\n  &lt;/databases&gt;\n&lt;/schema-mapping&gt;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jason.Whisnant/DB Data 03202023/EmpReview_employee.csv&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jason.Whisnant/OneDrive - ESO/Documents/GitHub/QPP2ndTry/EmpReview&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -81,6 +82,14 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jason.Whisnant\OneDrive - ESO\Documents\GitHub\QPP2ndTry\EmpReview" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jason.Whisnant\OneDrive - ESO\Documents\GitHub\QPP2ndTry\QPP" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="QPP2ndTry" type="Python.DjangoServer" factoryName="Django server">
       <module name="QPP2ndTry" />
@@ -126,84 +135,9 @@
       <workItem from="1678817999361" duration="1033000" />
       <workItem from="1678904057023" duration="8267000" />
       <workItem from="1679514441021" duration="3783000" />
-      <workItem from="1679582510016" duration="30047000" />
-    </task>
-    <task id="LOCAL-00001" summary="update to models">
-      <created>1679337287664</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1679337287664</updated>
-    </task>
-    <task id="LOCAL-00002" summary="update to models&#10;Update to settings.py to attempt to solve template not found">
-      <created>1679367686548</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1679367686548</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Renamed people-choice.html to people_choice.html&#10;Refactored to account for change">
-      <created>1679368535560</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1679368535560</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Renamed people-choice.html to people_choice.html&#10;Refactored to account for change">
-      <created>1679368730111</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1679368730111</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Renamed people-choice.html to people_choice.html&#10;Refactored to account for change">
-      <created>1679368980032</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1679368980032</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Renamed people-choice.html to people_choice.html&#10;Refactored to account for change">
-      <created>1679497969313</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1679497969313</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Refactored folder EmpReview/templates/EmpReview to EmpReview/templates/empreview to try to get rid of persistent html errors">
-      <created>1679501307672</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1679501307672</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Refactored folder EmpReview/templates/EmpReview to EmpReview/templates/empreview to try to get rid of persistent html errors">
-      <created>1679501927426</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1679501927426</updated>
-    </task>
-    <task id="LOCAL-00009" summary="added template redirects to class-based views">
-      <created>1679503091038</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1679503091038</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Refactor to return empreview to title case">
-      <created>1679515245603</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1679515245603</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Refactor to return empreview to title case">
-      <created>1679600610430</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1679600610430</updated>
+      <workItem from="1679582510016" duration="24694000" />
+      <workItem from="1680552440214" duration="6132000" />
+      <workItem from="1680715331527" duration="758000" />
     </task>
     <task id="LOCAL-00012" summary="Adding prod settings">
       <created>1679602558577</created>
@@ -324,28 +258,231 @@
       <option name="project" value="LOCAL" />
       <updated>1679691032436</updated>
     </task>
-    <task id="LOCAL-00029" summary="Adding prod settings&#10;Added Logging to prod settings">
-      <created>1679692274520</created>
+    <task id="LOCAL-00029" summary="Reverting static settings to be in line with Master">
+      <created>1679950828326</created>
       <option name="number" value="00029" />
       <option name="presentableId" value="LOCAL-00029" />
       <option name="project" value="LOCAL" />
-      <updated>1679692274520</updated>
+      <updated>1679950828326</updated>
     </task>
-    <task id="LOCAL-00030" summary="Syncing local db">
-      <created>1679931529517</created>
+    <task id="LOCAL-00030" summary="Added Cidr check to production.py">
+      <created>1680029627281</created>
       <option name="number" value="00030" />
       <option name="presentableId" value="LOCAL-00030" />
       <option name="project" value="LOCAL" />
-      <updated>1679931529517</updated>
+      <updated>1680029627282</updated>
     </task>
-    <task id="LOCAL-00031" summary="Syncing local db">
-      <created>1679932206067</created>
+    <task id="LOCAL-00031" summary="Added Cidr check to production.py">
+      <created>1680031063406</created>
       <option name="number" value="00031" />
       <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
-      <updated>1679932206067</updated>
+      <updated>1680031063406</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Removed Cidr Check&#10;Added output for current static attributes">
+      <created>1680036594335</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1680036594335</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Removed Cidr Check&#10;Added output for current static attributes">
+      <created>1680037992130</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1680037992130</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Changed cidr to /22 from /24 to encompass the .129 and .130 subnets">
+      <created>1680038693275</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1680038693275</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Changed cidr to /22 from /24 to encompass the .129 and .130 subnets">
+      <created>1680040820467</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1680040820467</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static in production.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py">
+      <created>1680108320772</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1680108320772</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py">
+      <created>1680109100447</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1680109100447</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist">
+      <created>1680110320906</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1680110320906</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py and settings.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py and settings.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist">
+      <created>1680111582427</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1680111582427</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py and settings.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py and settings.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist">
+      <created>1680112820103</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1680112820104</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py and settings.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py and settings.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist">
+      <created>1680113230344</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1680113230344</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py and settings.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py and settings.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist">
+      <created>1680113815593</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1680113815593</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py and settings.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py and settings.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist">
+      <created>1680114932544</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1680114932544</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py and settings.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py and settings.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist">
+      <created>1680116303222</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1680116303222</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py and settings.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py and settings.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist">
+      <created>1680117636494</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1680117636494</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py and settings.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py and settings.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist">
+      <created>1680119502814</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1680119502814</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py and settings.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py and settings.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist">
+      <created>1680120014960</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1680120014960</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Commented out whitenoise storage">
+      <created>1680120842743</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1680120842743</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Commented out whitenoise storage">
+      <created>1680123438409</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1680123438410</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Commented out whitenoise storage">
+      <created>1680125179917</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1680125179919</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Commented out whitenoise storage">
+      <created>1680125717924</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1680125717924</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Commented out whitenoise storage">
+      <created>1680126078420</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1680126078420</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Commented out whitenoise storage">
+      <created>1680126398388</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1680126398389</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Commented out whitenoise storage">
+      <created>1680126856032</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1680126856032</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Making some changes to attempt to get whitenoise working">
+      <created>1680196452964</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1680196452964</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Making some changes to attempt to get whitenoise working">
+      <created>1680197041349</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1680197041349</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Making some changes to attempt to get whitenoise working">
+      <created>1680208584768</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1680208584769</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Making some changes to attempt to get whitenoise working">
+      <created>1680209738209</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1680209738209</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Syncing local db&#10;&#10;(cherry picked from commit 5fb8fffb6becbcbe902295357858a360cd306336)">
+      <created>1681504972461</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1681504972461</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Syncing local db&#10;&#10;(cherry picked from commit bc1fde5231f609f94f46a3a165906985ff574c13)">
+      <created>1681505120503</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1681505120503</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +520,16 @@
     <MESSAGE value="Refactor to return empreview to title case" />
     <MESSAGE value="Adding prod settings" />
     <MESSAGE value="Adding prod settings&#10;Added Logging to prod settings" />
-    <MESSAGE value="Syncing local db" />
-    <option name="LAST_COMMIT_MESSAGE" value="Syncing local db" />
-  </component>
-</project>
+    <MESSAGE value="Reverting static settings to be in line with Master" />
+    <MESSAGE value="Added Cidr check to production.py" />
+    <MESSAGE value="Removed Cidr Check&#10;Added output for current static attributes" />
+    <MESSAGE value="Changed cidr to /22 from /24 to encompass the .129 and .130 subnets" />
+    <MESSAGE value="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static in production.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py" />
+    <MESSAGE value="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py" />
+    <MESSAGE value="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist" />
+    <MESSAGE value="Putting whitenoise back in place&#10; -- Added &quot;whitenoise.runserver_nostatic&quot; in INSTALLED_APPS in settings.py&#10; -- Added &quot;whitenoise.middleware.WhiteNoiseMiddleware&quot; to MIDDLEWARE in production.py&#10; -- Added a folder named &quot;static&quot; to the root of the app and set STATIC_URL to that folder in production.py and settings.py&#10; -- Added &quot;EmpReview/static&quot; to STATICFILES_DIRS in production.py&#10; -- Changed STATIC_ROOT to BASEDIR/static/ in production.py and settings.py&#10; -- Changed STATICFILES_STORAGE to whitenoise.storage.CompressedManifestStaticFilesStorage in production.py&#10; -- Added command to make the static root directory if it doesn't already exist" />
+    <MESSAGE value="Commented out whitenoise storage" />
+    <MESSAGE value="Making some changes to attempt to get whitenoise working" />
+    <MESSAGE value="Syncing local db&#10;&#10;(cherry picked from commit 5fb8fffb6becbcbe902295357858a360cd306336)" />
+    <MESSAGE value="Syncing local db&#10;&#10;(cherry picked from commit bc1fde5231f609f94f46a3a165906985ff574c13)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Syncing local db&#10;&#10;(cherry picked from commit bc1fde5231f609f94f46a3a165906985ff574c13)" />

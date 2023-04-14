@@ -2,7 +2,7 @@ import uuid
 
 from django.db import models
 from django.urls import reverse
-from django.utils import timezone
+from django.utils import timezone as tz
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
@@ -10,9 +10,9 @@ from django.dispatch import receiver
 
 class Employee(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    userId = models.CharField(max_length=25, blank=True)
-    managerId = models.CharField(max_length=25, blank=True)
-    status = models.CharField(max_length=25)
+    userId = models.CharField(max_length=50, blank=True)
+    managerId = models.CharField(max_length=50, blank=True)
+    status = models.CharField(max_length=50)
 
     def name(self):
         return f'{self.user.first_name} {self.user.last_name}'
@@ -138,7 +138,7 @@ class Person(models.Model):
 class Review(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, help_text="Unique ID for this particular review")
     person = models.ForeignKey('Person', on_delete=models.SET_NULL, null=True)
-    review_date = models.DateField(default=timezone.now(), help_text="Date of review")
+    review_date = models.DateField(default=tz.now, help_text="Date of review")
     reviewer = models.ForeignKey(Employee, on_delete=models.DO_NOTHING, null=True, related_name='reviewer',
                                  help_text="Manager writing the review")
     approver = models.ForeignKey(Employee, max_length=50,
@@ -175,7 +175,7 @@ class Approval(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, help_text="Unique ID for this approval")
     review = models.OneToOneField('Review', on_delete=models.DO_NOTHING, null=True)
     person = models.ForeignKey('Person', on_delete=models.DO_NOTHING, null=True)
-    approval_date = models.DateField(default=timezone.now(), help_text="Date of Approval")
+    approval_date = models.DateField(default=tz.now, help_text="Date of Approval")
     business_case = models.BooleanField(blank=True, help_text="Meets business requirements?")
     base_salary = models.DecimalField(max_digits=7, decimal_places=2, help_text="New Salary")
 
@@ -205,8 +205,10 @@ class Approval(models.Model):
 def create_employee_profile(sender, instance, created, **kwargs):
     if created:
         Employee.objects.create(user=instance)
+        print("Profile created for", User)
 
 
 @receiver(post_save, sender=User)
 def save_employee_profile(sender, instance, **kwargs):
     instance.employee.save()
+    print("Profile saved")

@@ -46,6 +46,7 @@ class EmployeeAdmin(UserAdmin):
     inlines = (EmployeeInline,)
     list_display = ('username', 'email', 'managerId')
     search_fields = ['username','employee__userId', 'employee__managerId']
+    model = Employee
 
     def get_inline_instances(self, request, obj=None):
         if not obj:

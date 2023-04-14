@@ -8,9 +8,8 @@ urlpatterns = [
     path('review/<uuid:pk>', views.ReviewDetailView.as_view(), name='review-detail'),
     path('approval/<uuid:pk>', views.ApprovalDetailView.as_view(), name='approval-detail'),
     path('reviews/my_created_reviews.html', views.ReviewsByRequester.as_view(), name='my_created_reviews'),
-    path('people-choice.html', views.search_person, name='people-choice'),
+    path('people_choice.html', views.search_person, name='people_choice'),
     path('success.html', views.success, name='success'),
-    path('name-autocomplete/', views.NameAutoComplete.as_view(), name='name-autocomplete'),
     path('get_or_create/<int:id>', views.get_or_create, name='get-or-create')
     ]
 
