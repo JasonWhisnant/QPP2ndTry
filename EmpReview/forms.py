@@ -14,7 +14,7 @@ class PersonForm(ModelForm):
 
     class Meta:
         model = Person
-        fields = (
+        fields = [
             'employee',
             'current_position',
             'new_position',
@@ -24,7 +24,7 @@ class PersonForm(ModelForm):
             'new_Job_Category',
             'current_level',
             'new_level',
-        )
+        ]
 
         widgets = {
             'employee': Select(attrs={'class': 'form-control'}),

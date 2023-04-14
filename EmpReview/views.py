@@ -82,13 +82,13 @@ def PersonDetail(request, pk):
 class PersonUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Person
     fields = (
-            'mgr_name',
+            'manager_Name',
             'current_position',
             'new_position',
             'current_path',
-            'new_path',
-            'current_job',
-            'new_job',
+            'new_Career_path',
+            'current_Job_Category',
+            'new_Job_Category',
             'current_level',
             'new_level',
         )
