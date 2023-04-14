@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="e3d9c45b-3ac4-4044-afa4-7656313e487c" name="Changes" comment="">
       <changelist_data name="JasonWhisnant" email="124310379+jasonwhisnant@users.noreply.github.com" date="1679929080000" />
       <change beforePath="$PROJECT_DIR$/EmpReview/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmpReview/views.py" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -531,5 +533,3 @@
     <MESSAGE value="Syncing local db&#10;&#10;(cherry picked from commit 5fb8fffb6becbcbe902295357858a360cd306336)" />
     <MESSAGE value="Syncing local db&#10;&#10;(cherry picked from commit bc1fde5231f609f94f46a3a165906985ff574c13)" />
     <option name="LAST_COMMIT_MESSAGE" value="Syncing local db&#10;&#10;(cherry picked from commit bc1fde5231f609f94f46a3a165906985ff574c13)" />
-  </component>
-</project>

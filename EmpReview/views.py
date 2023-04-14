@@ -406,3 +406,4 @@ def scratch_test(request):
     emps = data
 
     return render(request, 'EmpReview/scratchtest.html', {'emps': emps})
+
