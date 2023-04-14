@@ -172,8 +172,8 @@ def add_person(request):
 
 class PersonUpdate(UpdateView):
     model = Person
-    fields = ['employee', 'mgr_name', 'current_position', 'new_position', 'current_path', 'new_path', 'current_job',
-              'new_job', 'current_level', 'new_level']
+    fields = ['employee', 'manager_Name', 'current_position', 'new_position', 'current_path', 'new_Career_Path',
+              'current_Job_Category', 'new_Job_Category', 'current_level', 'new_level']
 
 
 class PersonDelete(DeleteView):
